@@ -15,6 +15,9 @@ jobs:
 
       - name: Build GDS
         uses: htfab/tt-gds-action@tt07-inputs
+        with:
+          tools-repo: htfab/tt-support-tools
+          tools-ref: tt07
   
   precheck:
     needs: gds
@@ -22,6 +25,9 @@ jobs:
     steps:
       - name: Run Tiny Tapeout Precheck
         uses: htfab/tt-gds-action/precheck@tt07-inputs
+        with:
+          tools-repo: htfab/tt-support-tools
+          tools-ref: tt07
 
   gl_test:
     needs: gds
