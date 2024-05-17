@@ -17,7 +17,7 @@ jobs:
         uses: htfab/tt-gds-action@tt07-inputs
         with:
           tools-repo: htfab/tt-support-tools
-          tools-ref: tt07
+          tools-ref: tt07-minor
           flow: openlane2
   
   precheck:
@@ -28,7 +28,7 @@ jobs:
         uses: htfab/tt-gds-action/precheck@tt07-inputs
         with:
           tools-repo: htfab/tt-support-tools
-          tools-ref: tt07
+          tools-ref: tt07-minor
 
   gl_test:
     needs: gds
