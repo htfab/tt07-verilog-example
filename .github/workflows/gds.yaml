@@ -15,10 +15,10 @@ jobs:
 
       - name: Build GDS
         uses: TinyTapeout/tt-gds-action@tt07
-        #with:
-        #  tools-repo: htfab/tt-support-tools
-        #  tools-ref: tt07
-        #  flow: openlane2
+        with:
+          tools-repo: htfab/tt-support-tools
+          tools-ref: json-config #tt07
+          #flow: openlane2
   
   precheck:
     needs: gds
@@ -26,9 +26,9 @@ jobs:
     steps:
       - name: Run Tiny Tapeout Precheck
         uses: TinyTapeout/tt-gds-action/precheck@tt07
-        #with:
-        #  tools-repo: htfab/tt-support-tools
-        #  tools-ref: tt07
+        with:
+          tools-repo: htfab/tt-support-tools
+          tools-ref: json-config #tt07
 
   gl_test:
     needs: gds
