@@ -18,7 +18,7 @@ jobs:
         with:
           tools-repo: htfab/tt-support-tools
           tools-ref: json-config #tt07
-          flow: openlane2
+          #flow: openlane2
   
   precheck:
     needs: gds
