@@ -26,9 +26,9 @@ jobs:
     steps:
       - name: Run Tiny Tapeout Precheck
         uses: TinyTapeout/tt-gds-action/precheck@tt07
-        #with:
-        #  tools-repo: htfab/tt-support-tools
-        #  tools-ref: tt07
+        with:
+          tools-repo: htfab/tt-support-tools
+          tools-ref: fuse-ports
 
   gl_test:
     needs: gds
